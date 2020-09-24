@@ -1,3 +1,3 @@
 ---
 # vars file for ec2-role
-myinstance_name: "{{ instance_name }}"
+myinstance_name: "{{ parameter }}"
