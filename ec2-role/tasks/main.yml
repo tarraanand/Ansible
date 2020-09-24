@@ -10,5 +10,5 @@
     vpc_subnet_id: subnet-920162de
     assign_public_ip: no
     instance_tags:
-        Name: instance-Anand
+        Name: "instance-{{ myinstance_name }}"
 
