@@ -5,7 +5,7 @@ pipeline {
     }
 
     stages {
-        stage('Hello') {
+        stage('Launch Instance') {
             steps {
                 ansiblePlaybook inventory: 'hosts', playbook: 'test.yml', extras: '-e parameter="${instance_name}"'
             }
