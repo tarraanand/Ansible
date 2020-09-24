@@ -1,2 +1,14 @@
 ---
 # tasks file for ec2-role
+- ec2:
+    key_name: solutionplus
+    instance_type: t2.micro
+    image: ami-04fcd96153cb57194
+    wait: yes
+    count: 1
+    region: us-east-2
+    vpc_subnet_id: subnet-920162de
+    assign_public_ip: no
+    instance_tags:
+        Name: instance-Anand
+
