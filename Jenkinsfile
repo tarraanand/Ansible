@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                ansiblePlaybook inventory: 'hosts', playbook: 'playbook.yml', extras: '-e parameter="$instance_name"')
+                ansiblePlaybook inventory: 'hosts', playbook: 'playbook.yml', extras: '-e parameter="$instance_name"'
             }
         }
     }
